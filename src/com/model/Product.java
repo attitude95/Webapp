@@ -28,5 +28,10 @@ public class Product {
 	public void setProductPrice(float productPrice) {
 		this.productPrice = productPrice;
 	}
+	@Override
+	public String toString() {
+		return "Product [productName=" + productName + ", enterpriseGstn=" + enterpriseGstn + ", productPrice="
+				+ productPrice + "]";
+	}
 	
 }

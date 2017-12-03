@@ -50,6 +50,9 @@ public class Add_Enterprise {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		finally {
+			DAO.closeConnection(connection);
+		}
 		return mv;
 	}
 }

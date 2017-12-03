@@ -48,9 +48,11 @@ public controller() {
 					
 				}
 			}
-			DAO.closeConnection(connection);
 		} catch (SQLException e) {
 			e.printStackTrace();
+		}
+		finally {
+			DAO.closeConnection(connection);
 		}
 		ModelAndView mv=null;
 		if(match) {

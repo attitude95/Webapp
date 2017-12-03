@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1> Hello World !!</h1>
+	<h1>Hello World !!</h1>
 	<center>
 		<h2>Hello World</h2>
 		<h3>
@@ -27,9 +27,16 @@
 					</tr>
 				</table>
 			</form>
-						<a href="addEnterpriseForm">Add Enterprise</a>
-						<a href="addProductForm">Add Product</a>
+			<ul>
+							<li><a href="viewEnterprise">View Enterprise</a></li>
+							<li><a href="viewProduct">View Products and Prices</a></li>
 			
+				<li><a href="addEnterpriseForm">Add Enterprise</a></li>
+				<li><a href="addProductForm">Add Product</a></li>
+				
+			</ul>
+
 		</h3>
-	</center></body>
+	</center>
+</body>
 </html>

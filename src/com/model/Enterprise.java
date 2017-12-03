@@ -44,6 +44,11 @@ public class Enterprise {
 	public void setEmailId(String emailId) {
 		this.emailId = emailId;
 	}
+	@Override
+	public String toString() {
+		return "Enterprise [gstn=" + gstn + ", enterpriseName=" + enterpriseName + ", spoke=" + spoke + ", address="
+				+ address + ", phone=" + phone + ", emailId=" + emailId + "]";
+	}
 	
 
 }
