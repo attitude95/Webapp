@@ -21,10 +21,14 @@ http://www.springframework.org/schema/context/spring-context-3.0.xsd">
    <bean id = "DBConnection" class = "com.dao.DBConnection" autowire="byType"></bean>
 
 <!--     Definition for LoginDetails bean --> 
-   <bean id = "LoginDDetails" class = "com.model.LoginDetails" autowire="byType"></bean>
+   <bean id = "LoginDetails" class = "com.model.LoginDetails" autowire="byType"></bean>
     
 <!--     Definition for Enterprise bean -->
    <bean id = "Enterprise" class = "com.model.Enterprise" autowire="byType"></bean>
+
+<!--     Definition for Product bean -->
+   <bean id = "Product" class = "com.model.Product" autowire="byType"></bean>
+
 
 
 </beans>  

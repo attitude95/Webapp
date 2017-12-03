@@ -28,6 +28,7 @@
 				</table>
 			</form>
 						<a href="addEnterpriseForm">Add Enterprise</a>
+						<a href="addProductForm">Add Product</a>
 			
 		</h3>
 	</center></body>
