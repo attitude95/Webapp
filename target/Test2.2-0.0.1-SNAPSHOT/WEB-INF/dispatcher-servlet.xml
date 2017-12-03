@@ -14,10 +14,17 @@ http://www.springframework.org/schema/context/spring-context-3.0.xsd">
     </bean>  
      <context:annotation-config/>
 
-   <!-- Definition for textEditor bean without constructor-arg  -->
+<!--  Definition for controller bean without constructor-arg  -->
    <bean id = "controller" class = "com.controller.controller"></bean>
 
-   <!-- Definition for spellChecker bean -->
+<!--     Definition for DBConnection bean --> 
    <bean id = "DBConnection" class = "com.dao.DBConnection" autowire="byType"></bean>
+
+<!--     Definition for LoginDetails bean --> 
+   <bean id = "LoginDDetails" class = "com.model.LoginDetails" autowire="byType"></bean>
     
+<!--     Definition for Enterprise bean -->
+   <bean id = "Enterprise" class = "com.model.Enterprise" autowire="byType"></bean>
+
+
 </beans>  

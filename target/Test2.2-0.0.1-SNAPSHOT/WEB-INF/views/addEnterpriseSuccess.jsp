@@ -7,6 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-Welcome Boss ${loginDetails.getUsername() }
+
+${enterprise.getEnterpriseName() } added successfully!
+<a href="addEnterpriseForm">Add Another</a>
 </body>
 </html>

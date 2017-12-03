@@ -7,6 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-Welcome Boss ${loginDetails.getUsername() }
+
+<h1> Invalid Credentials</h1>
+Click <a href="/Test2.2/">here </a> to login again
 </body>
 </html>

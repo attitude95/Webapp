@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-Welcome Boss ${loginDetails.getUsername() }
+<h1>Insertion Failed</h1>
+<a href="addEnterpriseForm">Click here to add again</a>
 </body>
 </html>

@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1> Invalid Credentials</h1>
-Click <a href="/Test2.2/">here </a> to login again
+<h1>Insertion Failed</h1>
+<a href="addEnterpriseForm">Click here to add again</a>
 </body>
 </html>

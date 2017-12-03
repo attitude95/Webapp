@@ -58,7 +58,7 @@ public controller() {
 		mv.addObject(loginDetails);
 		}
 		else {
-		mv=new ModelAndView("failure");
+		mv=new ModelAndView("loginFailure");
 		
 		}
 		return mv;
