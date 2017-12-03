@@ -33,6 +33,7 @@ public controller() {
 //
 		Connection connection=DAO.getConnection();
 
+		boolean match=false;
 
 		Statement statement;
 		try {
@@ -41,15 +42,25 @@ public controller() {
 			ResultSet result=statement.executeQuery(sql);
 			while(result.next()) {
 				System.out.println(result.getString(1)+" "+result.getString(2));
+				if(result.getString(1).equalsIgnoreCase(loginDetails.getUsername())	&&	result.getString(2).equalsIgnoreCase(loginDetails.getPassword())) {
+					match=true;
+					break;
+					
+				}
 			}
 			DAO.closeConnection(connection);
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
-		ModelAndView mv=new ModelAndView("welcome");
+		ModelAndView mv=null;
+		if(match) {
+		mv=new ModelAndView("welcome");
 		mv.addObject(loginDetails);
+		}
+		else {
+		mv=new ModelAndView("failure");
+		
+		}
 		return mv;
 	}
 }
