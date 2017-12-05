@@ -8,16 +8,27 @@
 <title>Enterprise List</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-<script>
-	alert(array);
-</script>
 </head>
 <body>
-
-<c:forEach items=${list } var="enterprise">
-
-${enterprise }
+<table border=2>
+<tr>
+<th>GSTN</th>
+<th>NAME</th>
+<th>SPOKE</th>
+<th>ADDRESS</th>
+<th>PHONE</th>
+<th>EMAILID</th>
+</tr>
+<c:forEach items="${list }" var="enterprise">
+<tr>
+<td>${enterprise.getGstn() }</td>
+<td>${enterprise.getEnterpriseName() }</td>
+<td>${enterprise.getSpoke() }
+<td>${enterprise.getAddress() }</td>
+<td>${enterprise.getPhone() }</td>
+<td>${enterprise.getEmailId() }</td>
+</tr>
 </c:forEach>
-
+</table>
 </body>
 </html>
